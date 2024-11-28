@@ -92,20 +92,20 @@ const renderPokemon = async (pokemonList) => {
       // Pokédex card
       return `
         <div
-          class="relative flex flex-row md:flex-col items-center p-4 border-none rounded-lg hover:bg-gray-100">
-          <p class="absolute top-2 right-2 text-sm text-gray-400 font-light">
+          class="relative flex flex-row md:flex-col items-center p-4 border-none rounded-lg text-surface shadow-sm  shadow-gray-500 bg-white">
+          <p class="absolute top-2 right-2 text-sm text-gray-500 font-light">
             #${details.id}
           </p>
-          <div class="w-24 h-24 flex justify-center items-center">
+          <div class="w-28 h-28 flex justify-center items-center">
             <img
               src="https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/pokemon/${
                 details.id
               }.png"
               alt="${details.name}"
-              class="object-cover max-w-24 max-h-24" />
+              class="object-cover min-w-28 min-h-28" />
           </div>
           <div class="flex flex-col items-center leading-normal w-full">
-            <h2 class="font-bold text-lg text-red-500 whitespace-nowrap">
+            <h2 class="font-bold text-md text-red-500 whitespace-nowrap">
               ${details.name.toUpperCase()}
             </h2>
             <div class="flex items-center gap-2">${typeImages}</div>
