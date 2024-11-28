@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex V1</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="h-screen bg-red-500 p-4">
+    <!-- Flex layout -->
+    <div class="flex flex-col h-full w-full">
+      <!-- Header -->
+      <header id="header" class="flex flex-col gap-4 w-full">
+        <div class="flex items-center gap-4">
+          <img src="./assets/interface/pokeball.svg" alt="Pokeball" />
+          <h1 class="text-2xl text-white font-bold">Pokédex V1</h1>
+        </div>
+      </header>
+      <!-- Pagination -->
+      <section
+        class="mt-4 mb-0 p-4 border-b border-gray-300 rounded-tl-xl rounded-tr-xl bg-white">
+        <div class="flex justify-center gap-4">
+          <button
+            id="first"
+            class="flex w-fit border-none rounded-full bg-white hover:bg-gray-100 p-2.5">
+            <img
+              src="./assets/interface/chevron_left.svg"
+              alt="Arrow left"
+              class="w-4 h-4" />
+            <img
+              src="./assets/interface/chevron_left.svg"
+              alt="Arrow left"
+              class="w-4 h-4" />
+          </button>
+          <button
+            id="prev"
+            class="w-fit border-none rounded-full bg-white hover:bg-gray-100 p-2.5">
+            <img
+              src="./assets/interface/chevron_left.svg"
+              alt="Arrow left"
+              class="w-4 h-4" />
+          </button>
+          <button
+            id="next"
+            class="w-fit border-none rounded-full bg-white hover:bg-gray-100 p-2.5">
+            <img
+              src="./assets/interface/chevron_right.svg"
+              alt="Arrow right"
+              class="w-4 h-4" />
+          </button>
+          <button
+            id="last"
+            class="flex w-fit border-none rounded-full bg-white hover:bg-gray-100 p-2.5">
+            <img
+              src="./assets/interface/chevron_right.svg"
+              alt="Arrow right"
+              class="w-4 h-4" />
+            <img
+              src="./assets/interface/chevron_right.svg"
+              alt="Arrow right"
+              class="w-4 h-4" />
+          </button>
+        </div>
+      </section>
+      <!-- Main content -->
+      <main class="mt-0 p-4 border-none rounded-bl-xl rounded-br-xl bg-white">
+        <div
+          id="pokedex"
+          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2">
+          <!-- BEHOLD. MY ALMOST 48H OF SUICIDAL THOUGHTS -->
+          <!-- Pokémon cards rendered here -->
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer
+        class="mt-4 p-4 flex flex-col items-center justify-center gap-2 w-full">
+        <p class="text-sm text-white">
+          Pokédex V1 &copy; 2024. Made with 😭 by Angélica Rivas
+        </p>
+        <div class="flex items-center gap-10">
+          <a
+            href="https://pokeapi.co/"
+            target="_blank"
+            class="text-sm text-white font-semibold hover:underline">
+            PokeAPI
+          </a>
+          <a
+            href="https://www.figma.com/community/file/979132880663340794"
+            target="_blank"
+            class="text-sm text-white font-semibold hover:underline">
+            Pokédex Prototype
+          </a>
+          <a
+            href="https://tailwindcss.com/"
+            target="_blank"
+            class="text-sm text-white font-semibold hover:underline">
+            TailwindCSS
+          </a>
+          <a
+            href="https://flowbite.com/"
+            target="_blank"
+            class="text-sm text-white font-semibold hover:underline">
+            Flowbite
+          </a>
+        </div>
+      </footer>
+    </div>
+    <!-- Flowbite JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
