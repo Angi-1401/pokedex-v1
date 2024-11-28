@@ -137,8 +137,10 @@ prevBtn.addEventListener("click", () => {
 });
 
 nextBtn.addEventListener("click", () => {
-  offset += LIMIT;
-  loadPokemon();
+  if (offset < 975) {
+    offset += LIMIT;
+    loadPokemon();
+  }
 });
 
 firstBtn.addEventListener("click", () => {
